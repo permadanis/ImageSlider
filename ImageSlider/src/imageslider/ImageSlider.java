@@ -5,6 +5,9 @@
  */
 package imageslider;
 
+import java.awt.Dimension;
+import javax.swing.JFrame;
+
 /**
  *
  * @author ytr
@@ -16,6 +19,14 @@ public class ImageSlider {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        JFrame frame = new JFrame();
+        PanelSlider panel = new PanelSlider();
+        frame.setContentPane(panel);
+        frame.setSize(panel.getPreferredSize());
+        frame.setPreferredSize(new Dimension(604, 431));
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setVisible(true);
+       
     }
     
 }
